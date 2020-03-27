@@ -53,11 +53,7 @@ routes.post('/incidents', celebrate({
   }).unknown()
 }), IncidentController.create );
 
-routes.get('/incidents',celebrate({
-  [Segments.QUERY]: Joi.object().keys({
-    id: Joi.number()
-  })
-}), IncidentController.index );
+routes.get('/incidents', IncidentController.index );
 
 routes.delete('/incidents/:id',celebrate({
   [Segments.PARAMS]: Joi.object().keys({
