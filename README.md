@@ -1,2 +1,2 @@
 # omini11-backend
-OminiStack 11 
+Oministack 11.0 - node.js desenvolvimento de app backend
